@@ -1,0 +1,111 @@
+.add-question {
+  display: flex;
+  width: 100%;
+  background-color: #F5F5F5;
+  height: 100vh;
+  justify-content: center;
+  
+}
+
+.add-question-container {
+  padding: 30px 15px;
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  max-width: 800px;
+  opacity: 0;
+  animation:slideTop .2s ease forwards;
+  animation-delay:.2s;
+}
+
+.head-title {
+  display: flex;
+  width: 100%;
+  
+}
+
+.head-title > h1 {
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 26px;
+}
+
+.question-container {
+  display: flex;
+  padding: 15px;
+  border-radius: 20px;
+  background-color: #dee2e6;
+  border: 1px solid #aa1313;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(66, 42, 42, 0.19);
+}
+
+.question-options {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  
+}
+
+.question-option {
+  flex-direction: column;
+  width: 100%;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0px;
+  font-size: 0.9rem;
+}
+
+.title > h3 {
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 500;
+}
+
+.title > small {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.title > input {
+  margin: 5px 0px;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  outline: none;
+}
+
+.title > input::placeholder {
+  color: #000;
+}
+.title > input:focus {
+  border: 1px solid #aa1313;
+  box-shadow: 0 4px 8px 0 #aa1313, 0 6px 20px 0 #aa1313;
+}
+
+.quill {
+  height: 100%;
+}
+
+.react-quill {
+  margin: 10px 0;
+  border-radius: 10px;
+}
+
+.ql-editor {
+  height: 200px;
+}
+
+.button {
+  max-width: fit-content;
+  margin: 10px 0px;
+  
+}
+
+button:hover {
+  background-color: #efd1d1;
+}
+
+
+

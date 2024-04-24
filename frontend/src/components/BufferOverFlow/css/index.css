@@ -1,0 +1,11 @@
+.buffer-index{
+    display: flex;
+    min-height: 85vh;
+    min-width: fit-content;
+}
+
+.buffer-index-content{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}

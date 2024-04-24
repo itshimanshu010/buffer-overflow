@@ -1,0 +1,141 @@
+header {
+    /* min-width: fit-content; */
+    display: flex;
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+    min-height: 5vh;
+}
+
+.hel{
+  font-weight: 400;
+    font-size: 14px;
+    margin: 0px 10px;  
+    cursor: pointer;
+    color: #271c1c;
+}
+.hel:hover {
+    
+  color: black;
+  border-radius: 80px;
+  text-shadow:.1px .1px #000;
+}
+
+.immg{
+  width: 190px;
+    
+}
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    /* padding: 10px 10px; */
+    background-color: rgb(190, 55, 53);
+    box-shadow: 0px 0.5px 8px rgba(0, 0, 0, 0.178);
+  }
+
+  .header-left {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0px 10px;
+    align-items: center;
+  }
+
+  .header-left > img {
+    width: 150px;
+    object-fit: contain;
+    padding: 0px 0px;
+  }
+
+  .header-left > h3 {
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0px 10px;  
+    cursor: pointer;
+    color: #271c1c;
+ 
+  }
+
+  .header-left > h3:hover {
+    
+    color: black;
+    border-radius: 80px;
+    text-shadow:.1px .1px #000;
+  }
+  
+  .header-middle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* padding: 0px 10px; */
+  }
+
+    .header-search-container {
+    display: flex;
+    padding: 10px 10px;
+    margin-right: 10px;
+    background-color:rgb(190, 55, 53);
+    border-radius: 50px;
+    border: 1px solid black;
+    
+  }
+
+  ::placeholder{
+    color:  black;
+    font-weight: bold;
+  }
+
+  .header-search-container > input {
+    border: none;
+    width: 100%;
+    background-color: transparent;
+    margin-left: 5px;
+    outline: none;
+    color: black;
+  }
+  
+  
+  
+  .header-right {
+    display: flex;
+  }
+
+.header-right-container {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+  }
+  
+  .header-right-container > .MuiSvgIcon-root {
+    margin: 0px 5px;
+    color: rgba(0, 0, 0, 0.534);
+    padding: 10px 5px;
+    cursor: pointer;
+    
+  }
+
+  .header-right-container > .MuiSvgIcon-root:hover {
+    background-color:  rgb(190, 55, 53);
+    color: #000;
+  }
+  
+ 
+  
+  @media screen and (max-width: 768px) {
+    .header-middle {
+      display: none;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .header-middle {
+      width: calc(20 * 2vw);
+    }
+  
+    .header-search-container {
+      width: 100%;
+    }
+  }
